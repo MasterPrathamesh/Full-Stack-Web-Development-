@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</head>
+    <body>
+        <table border="1">
+            <thead>
+                <th>Student Id</th>
+                <th>Student Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+            </thead>
+
+            <tbody>
+                <!-- Now suppose, we have removed the Pratham's gender and age from the table. 
+                 and extend the Name to the last column , for that we'll use "colspan=3" -->
+                <tr>
+                    <td>001</td>
+                    <td colspan="3">Pratham</td>
+                    
+                </tr>
+                <!-- Learning how rowspan works, for that i have removed age from shubham and ajinkya. 
+                 Now , we'll extend the age column of lavanya till the ajinkya by "rowspan=3 . Have a look below : " -->
+                <tr>
+                    <td>002</td>
+                    <td>Lavanya</td>
+                    <td>Female</td>
+                    <td rowspan="3">21</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Shubham</td>
+                    <td>Male</td>
+                    
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Ajinkya</td>
+                    <td>Male</td>
+                   
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <br/>
+        <!-- Practicing the next table :  -->
+
+        <table border="1">
+            <thead>
+                <th>Column1</th>
+                <th>Column2</th>
+                <th>Column3</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2">Row1 Cell1 </td>
+                    <td>Row1 Cell2</td>
+                    <td>Row1 Cell3</td>
+                </tr>
+                <tr>
+                    <td>Row2 Cell2</td>
+                    <td>Row2 Cell3</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Row3 Cell1</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table border="1">
+            <thead>
+                <th>No.</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>Type</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bill Gates</td>
+                    <td>Founder Microsoft</td>
+                    <td>$1000</td>
+                    <td rowspan="4">Company Founder</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steve Jobs</td>
+                    <td>Founder Apple</td>
+                    <td>$1200</td>
+                    
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry Page</td>
+                    <td>Founder Google</td>
+                    <td>$1100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mark Zuckeberg</td>
+                    <td>Founder Facebook</td>
+                    <td>$1300</td>
+                    
+                </tr>
+                <tfoot>
+                <tr>
+                    <td colspan="3">Total Expense : </td>
+                    <td>$4600</td>
+                </tr>
+                </tfoot>
+
+            </tbody>
+        </table>
+        <br/>
+        <!-- Now creatiing a big table to practice -->
+         <table border="1">
+            <thead>
+                <th>Country</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Street</th>
+                <th>Male</th>
+                <th>Female</th>
+                <th>Others</th>
+                <tbody>
+                    <tr>
+                        <td rowspan="8">1</td>
+                        <td rowspan="4">Kerala</td>
+                        <td rowspan="2">Cochin</td>
+                        <td>New Street</td>
+                        <td>500</td>
+                        <td>600</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Main Street</td>
+                        <td>300</td>
+                        <td>288</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Trivandram</td>
+                        <td>Guru Street</td>
+                        <td>500</td>
+                        <td>600</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>TVk Street</td>
+                        <td>500</td>
+                        <td>600</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+
+                        <td rowspan="4">Maharashtra</td>
+                        <td rowspan="2">Mumbai</td>
+                        <td>Krisha Street</td>
+                        <td>700</td>
+                        <td>850</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Main Street</td>
+                        <td>500</td>
+                        <td>600</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        
+                        <td rowspan="2">Surath</td>
+                        <td>New Street</td>
+                        <td>500</td>
+                        <td>600</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Billa Street</td>
+                        <td>500</td>
+                        <td>600</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2</td>
+                        <td rowspan="2">Alaska</td>
+                        <td rowspan="2">AKA Central</td>
+                        <td>New Street</td>
+                        <td>200</td>
+                        <td>210</td>
+                        <td>2</td> 
+                    </tr>
+                    <tr>
+                        
+                        <td>Cross Street</td>
+                        <td>1000</td>
+                        <td>1050</td>
+                        <td>10</td> 
+                    </tr>
+                </tbody>
+            </thead>
+         </table>
+    </body>
+</html>
