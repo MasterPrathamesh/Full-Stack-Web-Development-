@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <!--The <fieldset> HTML element is used to group several controls as well as labels (<label>) within a web form.
+            the <fieldset> element provides a grouping for a part of an HTML form, with a nested <legend> element providing a caption for the <fieldset>.
+            It takes few attributes, the most notable of which are form, which can contain the id of a <form> on the same page, 
+            allowing you to make the <fieldset> part of that <form> even if it is not nested inside it,
+            and disabled, which allows you to disable the <fieldset> and all its contents in one go.  -->
+       <form>
+           <fieldset>
+                <legend>Dummy Form</legend>
+                <label for="Email">Enter the Email:</label>
+                <!-- The placeholder allows us to show user what exactly they had to put in that specific field -->
+                <input type="text" id="Email" placeholder="Enter Email">
+                <br/>
+                <br/>
+                <label for="Password">Enter the Password:</label>
+                <input type="text" id="Password" placeholder="Enter Password">
+                <br/>
+                <br/>
+                <!-- <input> elements of type submit are rendered as buttons. 
+                When the click event occurs (typically because the user clicked the button), 
+                the user agent attempts to submit the form to the server.
+                An <input type="submit"> element's value attribute contains a string which is displayed as the button's label.
+                Buttons do not have a true value otherwise. 
+                The value provides the accessible description for the button.
+                If you don't specify a value, the button will have a default label, chosen by the user agent. 
+                This label is likely to be something along the lines of "Submit" or "Submit Query." -->
+                <input type="submit" value="Click Here">
+                <!-- we can simply create a button by the use of button tag. -->
+                <button>Previous Form</button>
+
+                <br/>
+                <br/>
+                <label for="date">Select Date:</label>
+                <input type="date" id="date">
+                <br/>
+                <br/>
+                <label for="Dish">Select Dishes</label>
+                <select name="Dishes" id="Dish">
+                    <option value="kurkure">Kurkure</option>
+                    <option value="maggie">Maggie</option>
+                    <option value="masala Dosa">Masala Dosa</option>
+                </select>
+                <br/>
+                <br/>
+                <button>Submit</button>
+                <br/>
+                <br/>
+                <!-- To create a textarea where we can write multiple liens:we have  -->
+                <textarea name="text" id="text" placeholder="Enter the text here" cols="15" rows="10"></textarea>
+
+                <br/>
+                <br/>
+
+           </fieldset>
+           <br/>
+           <br/>
+       </form>
+        <!-- Creating another form With different input attributes : for more attributes simply check W3Schools. -->
+     <fieldset> 
+        <legend>This is another Form</legend>
+        <form>
+            <label for="textfield1">TextField:</label>
+            <input type="text" name="textfield" id="textfield1" placeholder="Enter the text">
+            <br/>
+            <br/>
+            <label for="Submit">Click here to submit : </label>
+            <input type="submit" id="Submit">
+            <br/>
+            <!-- <input> elements of type radio are generally used in radio groups—collections of radio buttons describing a set of related options.
+            Only one radio button in a given group can be selected at the same time.
+            Radio buttons are typically rendered as small circles, 
+            which are filled or highlighted when selected. -->
+            <br/>
+                <label for="radio1">Male:</label>
+                <input type="radio" id="radio1" name="radio"/>     
+                <label for="radio2">Female</label>
+                <input type="radio" id="radio2" name="radio"/>
+                <label for="radio3">Others</label>
+                <input type="radio" id="radio3" name="radio"/>
+            <br/>
+                <!-- Note: Radio buttons are similar to checkboxes, but with an important distinction
+                — same-named radio buttons are grouped into a set in which only one radio button can be selected at a time,
+                 whereas checkboxes allow you to turn single values on and off. Where multiple same-named controls exist,
+                 radio buttons allow one to be selected out of them all, whereas checkboxes allow multiple values to be selected. -->
+                 <label for="check">English</label>
+                 <input type="checkbox" id="check" name="English">
+                 <label for="check2">Hindi</label>
+                 <input type="checkbox" id="check2" name="Hindi">
+                 <br/>
+                 <br/>
+                 <!-- To upload files or to choose files we have :  -->
+                 <label for="file1">choose file : </label>
+                 <input type="file" name="file" id="file1">
+                 <br/>
+                 <br/>
+                 <label for="image1">Clickable Image</label>
+                 <input type="image" id="image1" name="arrow" width="30px" height="30px" src="download.png">
+                 <br/>
+                 <br/>
+                 <!-- While we've created the first fields for email and password and button , we've noticed that 
+                  while putting password in the password field we can see the password and that should not happen. 
+                  for that we have input type as password :  -->
+                  <label for="pass1">Enter the Password : </label>
+                  <input type="password" id="pass1" name="pass" placeholder="Enter Password">
+
+
+        </form>
+    </fieldset> 
+
+
+
+    </body>
+</html>
