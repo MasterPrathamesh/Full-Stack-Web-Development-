@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- In this we'll going to learn about how to add media to the web page , that can be in the form 
+     of 'img' , 'video' or 'audio.
+     But firstly learn something about the loading : '
+     Timing of the load event
+        The load event is fired when the document has been fully processed. When images are loaded eagerly (which is the default), every image in the document must be fetched before the load event can fire.
+        By specifying the value lazy for loading, you prevent the image from delaying the load attribute by the amount of time it takes to request, fetch, and process the image.
+        Images whose loading attribute is set to lazy but are located within the visual viewport immediately upon initial page load are loaded as soon as the layout is known, but their loads do not delay the firing of the load event.
+        In other words, these images aren't loaded immediately when processing the <img> element, but are still loaded as part of the initial page load. They just don't affect the timing of the load event.
+        That means that when load fires, it's possible that any lazy-loaded images located in the visual viewport may not yet be visible. -->
+
+        <img src="KMKT_lecture_11.jpg" alt="chaldiyetumkahan" width="300px" height="300px" loading="lazy">
+        <br/>
+        <br/>
+        <!-- while working with audio tag, remember to put the keyword 'controls' so that it will be 
+         visible to the website and we can play the audio, or can control its playtime or volume .  -->
+        <audio src="Chal Diye Tum Kahan - PagalHits.mp3" controls></audio>
+        <br/>
+        <br/>
+        <!-- Their is another way of using audio tag :  -->
+         <!-- <audio controls>
+            <source src="Chal Diye Tum Kahan - PagalHits.mp3" type="audio/mp3">
+         </audio> -->
+         <video src="KMKT_video_lecture_11.mp4" width="1200px" height="400px" controls></video>
+         <!-- for the video tag also we have another option as earlier we have used it with like image tag. -->
+         <!-- <video controls>
+            <source src="KMKT_video_lecture_11.mp4" type="video/mp4">
+         </video> -->
+         <br/>
+         <p><h3>Watch Episode 1 </h3></p>
+         <br/>
+         <!-- now we're going to learn about iframes : 
+          The <iframe> tag specifies an inline frame.
+        An inline frame is used to embed another document within the current HTML document. -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mnkH1Y5lq5Y?si=mWl2GhbTYyOO1zVW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- The <nav> tag defines a set of navigation links.
+        Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major blocks of navigation links.
+        Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+        ex : 
+        <nav>
+        <a href="/html/">HTML</a> 
+        <a href="/css/">CSS</a> 
+        <a href="/js/">JavaScript</a> 
+        <a href="/python/">Python</a>
+        </nav>-->
+
+</body>
+</html>
