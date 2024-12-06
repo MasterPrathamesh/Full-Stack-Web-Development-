@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Point no. 2 :  Internal Css means we define tags within head tag , and style them accordingly . 
+        For ex :  -->
+         <!-- what if two conditions written at different places ? : 
+                for ex : if we write p tag and set its background as pink . then waht will happen ? 
+               - Remember , when the Property is set within the tag , it always wins: 
+               even if we've written it in the style tag . 
+               - But their's one way to apply the features to overall webpage is that you've to just 
+               add the !important within the tag , then it will be applicable to every tag even if it is 
+               written within the tag.  -->
+        <style>
+            /* p{
+                background-color: cornflowerblue !important;
+            } */
+            h1{
+                color: blueviolet;
+            }
+             /* to access the selector by id : add # and id name and open the brackets. 
+             */
+             #article1{
+                background-color: aquamarine;
+             }
+
+             .paraClass{
+                background-color: palevioletred;
+             }
+             /* to add styling to the group selector. */
+             p,article{
+                width: 500px;
+             }
+             /* suppose we only want to apply the style to the paragraph tag's paraClass then :  */
+             p.paraClass{
+                text-align: center;
+             }
+
+
+        </style>
+
+        <!-- Now for external Css we've to make a new file with any name with .css extension. 
+         And secondly we've to link the main html file with the css file as :  -->
+         <link rel="stylesheet" href="lecture_13.css">
+
+         <!-- Selectors are of 4 types : 
+          - element : p tag , h1 , article , section etc.  
+          - id : id of any tag . 
+          - class : giving same class name to same tags on which we've to style them once. 
+          - group : combining different tags at the same time like p,article tag . 
+           -->
+        
+</head>
+<body>
+   
+ <!-- Point no. 1 : Today we've started with CSS (Cascading Style Sheets)
+     Firstly , we're going to start with Inline Css. In Inline Css we we give style within the tags , without 
+     creating any separate file for it. -->
+   <h1 id="head1">Welcome to CodeHelp</h1>
+   <p style="background-color: violet;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consectetur dolorem voluptatum 
+    animi fugiat error molestiae similique dolore, cupiditate facere?</p>
+
+   <p style="color: rgb(16, 65, 113);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit, cumque, a nam vitae ipsum eaque quis, 
+    eligendi atque labore in quos molestias dignissimos! Quibusdam esse voluptatibus repellendus? Voluptas, ab?</p>
+
+    <article id="article1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil aspernatur laborum, exercitationem aut corporis perferendis dignissimos,
+     molestiae non commodi quisquam nobis provident illum culpa dolor eveniet totam tempora odit soluta repudiandae alias architecto fugiat.
+    Modi omnis perferendis aspernatur animi exercitationem!</article>
+
+     <!-- The third selector is 'class' : suppose we want combine multi paragraph tags to one class and 
+     then based on the class we can style or define its features.
+     - For using the class we've to add dot(.) and then class name and then open the brackets in the style tags. -->
+     <p class="paraClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, voluptatibus!</p>
+
+     <p class="paraClass">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, libero! Dolore dolorem harum velit fuga.</p>
+
+     <p class="paraClass">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, atque.</p>
+
+
+    <footer> I am Footer </footer>
+
+
+</body>
+</html>
