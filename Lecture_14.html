@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Today we'll learn about fonts -->
+     <!-- This below links are taken from google fonts :  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet"> -->
+    <style>
+        p,h2{
+            font-style: italic;
+            font-size: 20px;
+            /* Another we have font family. for ex :  */
+
+            font-family:'times-new-roman';
+            /* font-weight: 900; as we increase the font-weight: the font gets little bold. */
+            /* if we want to increase the gap between lines then we can use : line-height:  */
+            line-height: 20px;
+            /* suppose you want some external font which is not available , then you can go to google fonts 
+            select any one font and click on the + icon , after clicking on it copy the code which is given in the 
+            link tag and paste it outside the style tag(means in the head tag) and then copy the css link and add it in the style tag .  */
+            /* .anton-sc-regular {
+            font-family: "Anton SC", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            } */
+        }
+            /* Now let's learn about Colors : let's start with giving id's to our tags.   */
+            #para1{
+                color: blueviolet;
+            }
+            #para2{
+                background-color: rgb(39, 176, 197);
+            }
+            #para3{
+                /* The first 3 values are R,G,B values and the last one is alpha value which is used to set the transparency of the color while choosing it . */
+                 background-color: rgba(66, 223, 152, 0.534);  
+            }
+            /* search on google 'Hexadecimal color picker' and select the hexadecimal value according to you*/
+            .firstClass{
+                /* The hexadecimal values are represented in the form of #ffffff , the first 2 f's are denoted for red 
+                the 2nd 2 f's are denoted as green and the third two f's are denoted by blue. */
+                background-color:#03fcfc ; 
+            }
+            /* Now we'll learn about the hsl values : 
+            The hsl() functional notation expresses a color in the sRGB color space according to its hue,
+            saturation, and lightness components. An optional alpha component represents the color's transparency.
+            just go on google and search 'hsl color picker' and select the value according to you as it depends on color.
+            HSL stands for Hue, Saturation, and Lightness.
+
+                HSL color values are specified with:
+
+                hsl(hue, saturation, lightness)
+
+                Hue
+                Hue is a degree on the color wheel from 0 to 360. 0 (or 360) is red, 120 is green, 240 is blue.
+
+                Saturation
+                Saturation can be described as the intensity of a color. It is a percentage value from 0% to 100%.
+
+                100% is full color, no shades of gray.
+
+                50% is 50% gray, but you can still see the color.
+
+                0% is completely gray; you can no longer see the color.
+
+                Lightness
+                The lightness of a color can be described as how much light you want to give the color,
+                where 0% means no light (dark), 50% means 50% light (neither dark nor light), and 100% means full light. */
+                
+                 #para4{
+                    background-color: hsl(150, 64%, 71%);
+                 }   
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <h2>Welcome to CodeHelp</h2>
+
+    <p id="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ut eius unde laudantium tempore nam sit nemo voluptates iusto quis!</p>
+
+    <p id="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+     Consequatur consequuntur minus explicabo aliquid repellendus ex suscipit expedita dolor dolores ipsa, sed,
+     distinctio odit nesciunt vero quas! Nostrum quae aliquid saepe?</p>
+
+     <p id="para3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate recusandae nemo qui quis voluptatibus porro laboriosam id aliquid facilis hic, consectetur quidem perferendis repellendus.
+         Alias quis qui, quam blanditiis debitis rem earum, ducimus velit, suscipit accusamus necessitatibus eligendi id dolor.    
+    </p>
+    <p class="firstClass">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In quo dolorem voluptas cum numquam ab reiciendis odit laboriosam assumenda eius!</p>
+    <p id="para4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nesciunt ipsum reprehenderit placeat iusto amet sed eius quia laborum, natus dolores earum distinctio dicta pariatur odio ullam. 
+       Similique, eum quis.</p>
+
+</body>
+</html>
