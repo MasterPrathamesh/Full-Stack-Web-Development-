@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* --- we'll going to learn how to create borders : */
+        /* Universal selector is a selector which is applicable to every content.
+         The previous selectors were id,class,group now we have universal selector which is denoted by *. */
+         *{
+            border: 0;
+            margin: 0;
+         }
+        h1{
+             background-color: aquamarine;
+             /* border-style: solid;
+             border-width: 2px;
+             border-color: blueviolet; */
+             /* --- Their is an another way to create the same border :  */
+             /* border:2px blueviolet solid; */
+             /* --- the border radius helps us to give the curve shape to the pointed edges of any borders. */
+             /* border-radius: 10px; */
+             /* --- what if we want only certain border curved and remaining all as it is ? 
+             then we have different opetions :  */
+             /* border-top-left-radius: 10px;
+             border-top-right-radius: 8px;
+             border-bottom-right-radius: 8px; */
+             /* --- If we want border only at top or bottom or left or right , we have options  */
+             /* border-top: solid blueviolet 4px; */
+             border: solid black 2px;
+             border-radius: 8px;
+             width: 350px;     /* ---if we don't want that our h1 should cover the whole screen , then we can set it's width , so that we can reduce it according to the text we have.   */
+            /* --- Suppose if we want to increase the the height of h1 tag then : we have height for this , after implementing it , we can totally see the change.  */
+            height: 50px;
+        }
+        .firstPara{
+            background-color: blanchedalmond;
+            
+        }
+        .secondPara{
+            background-color: cornflowerblue;
+           
+        }
+        .thirdPara{
+            background-color: cadetblue;
+        }
+
+        .firstPara,.secondPara,.thirdPara{
+            border: solid black 2px;
+            border-radius: 8px;
+             width: 350px;
+             /* The padding increases the space between the text(actual content) and the border. 
+             - go on google and search padding at w3 schools or box model , we'll get the understanding of the diagram , that whatever
+             our webpage we'll going to built or we see , that is considered as a rectangle.
+             The innner most part is our content and then it comes padding and then border and then margin. 
+             while working with the margins , the margins are set between our two actual texts . 
+             let's have a look : 
+              */
+             /* padding: 20px;
+             margin: 30px; */
+             /* suppose we want padding from top or bottom or left or right , then we have options for it : 
+             But to do it in an easy way, we have a shortcut : 
+             ----> padding : 20px(top) 25px(right) 20px(bottom) 25px(left) , this will help you to give padding , without using all the elements at different places  */
+        }
+
+
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+   <h1>Welcome to CodeHelp!</h1>
+
+   <p class="firstPara">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Veniam natus eum illo earum sit consequuntur maxime officiis voluptates accusantium quos.
+   </p>
+
+    <p class="secondPara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit quia repellat quam itaque soluta eos et.
+        Enim doloribus voluptate quasi est earum? Delectus, perspiciatis? Facere repellendus laboriosam corrupti,
+        voluptates fuga autem temporibus ea eaque, adipisci sunt aspernatur ut est.
+    </p>
+
+    <p class="thirdPara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At minus quod asperiores amet illo neque pariatur delectus, 
+        enim numquam voluptate odit, ipsam maiores omnis quibusdam sunt fugiat, atque necessitatibus excepturi aut dolorum? Ea ut, 
+        maiores qui esse eligendi laborum facere.
+    </p>
+
+
+
+
+
+
+</body>
+</html>
