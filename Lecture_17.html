@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- static
+    The element is positioned according to the Normal Flow of the document.
+     The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+
+    relative
+    The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of 
+    top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element
+     in the page layout is the same as if position were static.
+
+    This value creates a new stacking context when the value of z-index is not auto.
+     Its effect on table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.
+
+    absolute
+    The element is removed from the normal document flow, and no space is created for the element in the page layout.
+     The element is positioned relative to its closest positioned ancestor (if any) or to the initial containing block. 
+     Its final position is determined by the values of top, right, bottom, and left.
+
+    This value creates a new stacking context when the value of z-index is not auto. 
+    The margins of absolutely positioned boxes do not collapse with other margins. 
+    fixed
+    The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is positioned relative to its initial containing block, which is the viewport in the case of visual media. Its final position is determined by the values of top, right, bottom, and left.
+
+    This value always creates a new stacking context. In printed documents, the element is placed in the same position on every page.
+
+    sticky
+    The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.
+
+    This value always creates a new stacking context. Note that a sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" (created when overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't the nearest actually scrolling ancestor.-->
+    <!-- The images are very close to each other , we'll apply margin from the left.  -->
+     <style>
+        div{
+            border: 1px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+        .img2{
+            /* position: absolute;
+            /* top: 10px;
+            left: 100px; */
+            
+        }
+        .container{
+            position: relative;
+            background-color: black;
+            height: 8000px;
+
+        }
+        .img4{
+            position: fixed;
+        }
+        .img3{
+            position: sticky;
+            top: 100px;
+        }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <img src="P_1.jpeg" alt="P_letter_1" height="200px" width="200px" class="img1">
+        <img src="P_2.png" alt="P_letter_2" height="200px" width="200px"  class="img2">
+        <img src="P_3.png" alt="P_letter_3" height="200px" width="200px"  class="img3">
+        <img src="P_4.png" alt="P_letter_4" height="200px" width="200px"  class="img4">
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
