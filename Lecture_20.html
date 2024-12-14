@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- In this we're going to discuss about Flexbox.
+     Flexbox is a one-dimensional layout method for arranging items in rows or columns. 
+     Items flex (expand) to fill additional space or shrink to fit into smaller spaces. 
+     This article explains all the fundamentals.
+     CSS flexible box layout enables you to:
+
+    Vertically center a block of content inside its parent.
+    Make all the children of a container take up an equal amount of the available width/height, regardless of how much width/height is available.
+    Make all columns in a multiple-column layout adopt the same height even if they contain a different amount of content. -->
+    <style>
+        .container{
+            background-color: beige;
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+            height: 500px;
+            /* This will convert our container to flex  */
+            display: flex; 
+            /* we can also set the flex direction , as reverse  */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; 
+            The flex-flow CSS shorthand property specifies the direction of a flex container, as well as its wrapping behavior.*/
+            /* flex-wrap: wrap; */
+            /* we can also justify the content as center , start , end , space-between etc. */
+            /* justify-content: space-around; */
+            /* The CSS align-items property sets the align-self value on all direct children as a group. 
+            In flexbox, it controls the alignment of items on the cross axis. In grid layout, it controls the alignment of items on the block axis within their grid areas. */
+            align-items: start;
+            justify-content: start;
+            /* align-content: center; */
+            /* The CSS align-content property sets the distribution of space between and around content items along a flexbox's cross axis, or a grid or block-level element's block axis. */
+            ;
+
+
+
+        }
+        .box{
+            /* height: 100px;
+            width: 100px; */
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            background-color:aqua ;
+            order: 10;
+            /* The flex-shrink CSS property sets the flex shrink factor of a flex item. 
+            If the size of all flex items is larger than the flex container, the flex items can shrink to fit according to their flex-shrink value. 
+            Each flex line's negative free space is distributed between the line's flex items that have a flex-shrink value greater than 0. */
+            flex-shrink: 4;
+            /* The flex-grow CSS property sets the flex grow factor, which specifies how much of the flex container's positive free space, if any, should be assigned to the flex item's main size.
+
+            When the flex-container's main size is larger than the combined main sizes of its flex items, this positive free space can be distributed among the flex items,
+            with each item's growth being their growth factor value as a proportion of the sum total of all the flex items' flex grow factors. */
+            /* flex-grow: 5; */
+            /* The flex-basis CSS property sets the initial main size of a flex item. 
+            It sets the size of the content box unless otherwise set with box-sizing. */
+            /* flex-basis: 400px; */
+            align-self: end;
+
+        }
+        #box2{
+            background-color: blue;
+            /* flex-grow: 1; */
+        }
+        #box3{
+            background-color: orange;
+            /* flex-grow: 1; */
+        }
+        #box4{
+            background-color:brown;
+            order: -1;
+            /* flex-grow: 1; */
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box" id="box1">box 1</div>
+        <div class="box" id="box2">box 2</div>
+        <div class="box" id="box3">box 3</div>
+        <div class="box" id="box4">box 4</div>
+    </div>
+
+
+
+
+
+</body>
+</html>
