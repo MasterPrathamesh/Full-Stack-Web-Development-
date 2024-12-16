@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Understanding box shadow.*/
+        .container{
+        background-color: beige;
+        height: 650px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .box{
+            /* we can also create a custom variable for using the same entity again and again , for ex :  */
+            --primary-color: aquamarine;
+            --custom-width: 330px;
+            background-color: var(--primary-color);
+            width: var(--custom-width);
+            height: 340px;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 10px;
+            /* box-shadow: 10px 10px blueviolet; */
+            /* box-shadow: 10px 10px 100px blueviolet;  the 3rd value is the blur radius */
+            /* box-shadow: 10px 10px 10px 10px blueviolet; */
+            /* the fourth value is the spread radius */
+            box-shadow: inset 10px 10px 20px blueviolet;
+
+        }
+        #head1{
+            /* text-shadow: 2px 2px 2px blue; */
+            /* text-shadow: blueviolet 2px 2px 2px; */
+            text-shadow: blueviolet 2px 3px;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <img src="Krishna_2.jpeg" alt="Krishna_img">
+            <h2 id="head1">Krishna Photo</h2>
+            <p>Hare Krishna , Hare Krishna Krishna Krishna Hare Hare , Hare Ram Hare Ram , Ram Ram Hare Hare !!</p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>
